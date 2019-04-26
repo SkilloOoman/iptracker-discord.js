@@ -5,8 +5,6 @@ var fs = require('fs');
 
 client.on('ready', () => {
     console.log('ready as '  + client.user.tag);
-    client.user.setUsername('Skillo B.O.T')
-    client.user.setAvatar(fs.readFileSync('./stylo.jpg'))
 });
 client.on('message', message => {
     if(message.content === '/help'){
@@ -46,4 +44,4 @@ client.on('message', message => {
         });
     }
 });
-client.login("NDYwNDcwMTYwNTE2NDQ4Mjc2.Di4LSg.nNkWovLWCALXNmhziMZwsJwINO4");
+client.login('TOKEN');
